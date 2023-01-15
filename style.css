@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -10,91 +10,424 @@ a {
     color: rgb(70, 66, 66);
 } 
 
-.uppernavbar {
-    background-color: rgb(184, 171, 171);
-}
 
-.upper_navbar {
+/* -----------------------------------Upper NavBar Portion------------------------------------ */
+
+.upper-nav-portion {
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: 0px auto; 
+    align-items: center;
+    margin: 0px 50px;
+    padding: 0px 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
 }
 
-.textlang {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+.call-text {
+    margin-left: 30px;
+}
+
+.right-text {
+    display: flex;
+}
+
+.right-text img {
+    width: 18px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+.email-text {
+    font-weight: bold;
+}
+
+.left-text {
+    border-right: 1px solid rgb(204, 198, 198);
+    border-left: 1px solid rgb(204, 198, 198);
+    padding: 5px 20px;
+}
+
+.lang-text {
+    font-size: 16px;
+}
+
+.left-text:hover {
+    border: none;
+}
+
+/* -----------------------------------Lower NavBar Portion-------------------------------------- */
+
+.bottom-border {
+    border-bottom: 1px solid rgb(238, 221, 221);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.lower-nav-portion {
     background-color: white;
-    padding: 10px;
-    color: rgb(70, 66, 66);
-    font-size: 18px;
-}
-
-.textcall {
-    margin-left: 60px;
-}
-
-.textright {
-    font-size: 18px;
-    padding: 10px;
-}
-
-.lowernavbar {
-    background-color: white;
-    border-bottom: 3px solid rgb(214, 199, 199);
+    margin: 0px 50px;
+    padding: 10px 20px;
 }
 
 .saylanilogo img {
-    width: 270px;
-    height: 100px;
-    padding: 25px;
+    width: 210px;
+    height: 60px;
 }
 
-.saylanilogonavbar ul {
+.saylanilogo-navbar ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style-type: none;
-    margin: 0px 40px 0px 40px;
 }
 
-.homenavbar .list {
-    padding-top: 40px;
+.list a:hover {
+    color: #0066b3;
 }
 
-#container {
+.donate a {
+    background-color: #0066b3;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.donor a {
+    color: #8dc63f;
+}
+
+
+/* ----------------------------------Donation Headings with Pics--------------------------------- */
+
+#web-container {
+    background-color: rgb(255, 255, 255);
+    margin: 0 50px;
+    padding: 0 20px;
+}
+
+#donation-hp {
+    margin-top: 10px;
+}
+
+.text-image {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-image: url(./images/carousal_background.d77d94e41c5a71ae581f.png);
+    background-size: contain;
+}
+
+.contentleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contentleft h2 {
-    font-size: 60px;
-    /* margin-top: 40px;
-    margin-left: 40px; */
-    margin: 40px 0px 0px 60px;
+    font-size: 45px;
+    padding-bottom: 10px;
 }
 
 .contentleft h3 {
-    font-size: 30px;
-    margin: 40px 0px 0px 60px;
-}
-
-.pakistan {
-    color: greenyellow;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .contentleft p {
-font-size: 22px;
-margin: 40px 0px 0px 60px;
-}
- 
-.button{
-    font-size: 22px;
-margin: 40px 0px 0px 60px;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
 }
 
-.contentright img{
-    width: 500px;
-    height: 500px;
-    padding-right: 50px;
+.read-more {
+    width: 180px;
+    border: 1px solid black;
+    padding: 15px 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.green-text {
+    color: #8dc63f;
+}
+
+.contentright img {
+    width: 520px;
+    margin-top: 35px;
+}
+
+.ration-bags {
+    margin-left: 5px;
+    color: #0066b3;
+}
+
+/* -----------------------------------Quick Donations------------------------------------------ */
+
+#quick-dona {
+    background-color: #f0fcdb;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.help-us {
+    display: flex;
+    align-items: center;
+}
+
+.support-me h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.support-me h4{
+    font-size: 18px;
+    color: #0066b3;
+}
+
+.support-me-list ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.support-me-list li {
+    font-size: 15px;
+    padding: 20px 30px;
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+} 
+
+.support-me-list li:hover {
+    background-color: #424242;
+    color: white;
+}
+
+.support-me-list .highlight-green {
+    background-color: #8dc63f;
+    color: white;
+}
+
+.support-me-list .highlight-grey {
+    background-color: #424242;
+    color: white;
+}
+
+/* ---------------------------One Blanket Picture------------------------------- */
+
+.one-blanket img {
+    width: 1120px;
+    height: 520px;
+    margin-top: 20px;
+}
+
+/* ---------------------------What We Are Doing------------------------------- */
+
+.doing-what-head {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.doing-what-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.doing-what-icon li {
+    list-style-type: none;
+}
+
+.doing-middle-icon {
+    background-color: #f0fcdb;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.doing-middle-icon:hover {
+    background-color: #f8f5e5;
+    font-size: 20px;
+
+}
+
+.education-icon {
+    margin-top: 20px;
+}
+
+.food-icon {
+    background-color: #f0fcdb;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.food-icon-top {
+    margin-top: 20px;
+}
+
+.upper {
+    margin-top: 10px;
+}
+
+/* ------------------------Upcoming Projects---------------------------- */
+
+
+.food-distribution {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-heading-button {
+    background-image: url(./images/Food-Distribution.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    width: 360px;
+    height: 280px;
+    padding: 0px 10px;
+}
+
+.IT-heading-button {
+    background-image: url(./images/IT-Enterprenuarship.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    width: 360px;
+    height: 280px;
+    padding: 0px 10px ;
+}
+
+.help-heading-button {
+    background-image: url(./images/Help-The-Needy.jpg);
+    background-size: cover;
+    border-radius: 12px;
+    width: 360px;
+    height: 280px;
+    padding: 0px 10px ;
+}
+
+.form_heading_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    color: white;
+}
+
+.form_button {
+    background-color: #8dc63f;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+/* ------------------------Upcoming Other Projects---------------------------- */
+
+#other_projects_container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.under_img_top_right {
+    position: absolute;
+    background-color: #8dc63f;
+    border-top-left-radius: 50px;
+    padding: 45px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.distrbution_food img {
+    width: 560px;
+    height: 460px;
+}
+
+.other_projects {
+    margin-left: 25px;
+}
+
+.other_projects_head {
+    margin-bottom: 25px;
+}
+
+.other_projects_list {
+    display: flex;
+}
+
+.other_projects_list_head {
+    padding: 0px 0px 20px 20px;
+    line-height: 1.6rem;
+}
+
+.projects_icon img{
+    padding-top: 15px;
+    width: 30px;
+}
+
+.projects_icon_tharparkar img {
+    padding-top: 15px;
+    width: 30px;
+}
+
+.other_projects_list_head h3 {
+    color: #0066b3;
+}
+
+/* ------------------------Upcoming Other Projects---------------------------- */
+
+#main_caulculation {
+    background-color: #0066b3;
+    margin-bottom: 50px;
+}
+
+.calculation_line {
+    background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 420px;
+}
+
+.calculation_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cal_row_food ul {
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    padding: 5px 20px;
+}
+
+.cal_row_food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin: 70px 55px;
+}
+
+.bold_figure .bold_num {
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+.cal_row_food img {
+    background-color: white;
+    padding: 30px;
+    border-radius: 50px;
 }

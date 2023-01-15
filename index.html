@@ -5,88 +5,432 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saylani Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="uppernavbar">
-        <div class="upper_navbar">
-            <div class="textright">
-                <div class="textemail">
+    <!-- -----------------Upper NavBar Portion--------------- -->
+    <div class="upper-nav-portion">
+        <div class="right-text">
+            <div class="email-text">
+                <a href="mailto:info@saylaniwalfare.com">
+                    <img src="./images/email-removebg-preview.png" alt="Emial Icon">
+                        info@saylaniwalfare.com
+                </a>
+                <span class="call-text">
                     <a href="#">
-                        info@SaylaniWalfare.com
-                    </a>
-                    <span class="textcall">
-                        <a href="#">
+                        <img src="./images/call-removebg-preview.png" alt="Call Icon" class="call">
                             021-111-729-526
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="left-text">
+            <div class="lang-text">
+                <a href="#">
+                    English
+                </a>
+            </div>
+        </div>
+    </div>
+        
+    <!-- -----------------Lower NavBar Portion--------------- -->
+    <div class="bottom-border">
+        <div class="lower-nav-portion">
+            <div class="saylanilogo-navbar">
+                <ul class="homenavbar">
+                    <li class="saylanilogo">
+                        <a href="#">
+                            <img src="./images/Saylanilogo.png" alt="Sayalani Logo">
                         </a>
-                    </span>
+                    </li>
+                    <li  class="list">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="list">
+                        <a href="">About</a>
+                    </li>
+                    <li class="list">
+                        <a href="">Services</a>
+                    </li>
+                    <li class="list">
+                        <a href="">Media</a>
+                    </li>
+                    <li class="list">
+                        <a href="">News</a>
+                    </li>
+                    <li class="list">
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li class="list">
+                        <a href="">Bank Details</a>
+                    </li>
+                    <li class="list donor">
+                        <a href="">Overseas Donors</a>
+                    </li>
+                    <li class="donate">
+                        <a href="">DONATE NOW</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------Main Body--------------- -->
+
+    <div id="web-container">
+
+        <!-- -----------------Donation Headings with Pics--------------- -->
+
+        <div id="donation-hp">
+            <div class="text-image">
+                <div class="contentleft">
+                    <h2>
+                        Donate us to support <br>
+                        <span class="green-text">
+                            flood-affected 
+                        </span>
+                        families in <br>
+                        Pakistan
+                    </h2>
+                    <h3>
+                        We are distributing
+                        <span class="ration-bags">
+                            Ration Bags I
+                        </span>
+                    </h3>
+                    <p>
+                        Saylani Welfare is on the ground and already working with local <br> 
+                        communities to assess how best to support affected families, who <br> 
+                        urgently need food, Ration, shelter, bedding, Medical Facility and <br>
+                        hygiene items.
+                    </p>
+                    <Button class="read-more">
+                        <a href="">
+                            Read More &nbsp &nbsp &gt &gt
+                        </a>
+                    </Button>
+                </div>
+                <div class="contentright">
+                    <img src="./images/Sylani contribution pic.png" alt="">
                 </div>
             </div>
-            <div class="textlang">
-                English
+        </div>
+
+        <!-- -----------------Quick Donations--------------- -->
+
+        <div id="quick-dona">
+            <div class="help-us">
+                <div class="support-me">
+                    <h2>
+                        Help Us to make <br>
+                        lives better
+                    </h2>
+                    <h4>
+                        Quick Donation
+                    </h4>
+                </div>
+                <div class="support-me-list">
+                    <ul>
+                        <li class="highlight-grey">
+                            Electricity bill support fund
+                        </li>
+                        <li>
+                            Flood Relief
+                        </li>
+                        <li>
+                            Help the needy in winter
+                        </li>
+                        <li>
+                            Food
+                        </li>
+                        <li class="highlight-green">
+                            Donate
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="lowernavbar">
-        <div class="saylanilogonavbar">
-            <ul class="homenavbar">
-                <li class="saylanilogo">
-                    <img src="./images/Saylanilogo.png" alt="Sayalani Logo">
-                </li>
-                <li  class="list">
-                    <a href="">Home</a>
-                </li>
-                <li class="list">
-                    <a href="">About</a>
-                </li>
-                <li class="list">
-                    <a href="">Services</a>
-                </li>
-                <li class="list">
-                    <a href="">Media</a>
-                </li>
-                <li class="list">
-                    <a href="">News</a>
-                </li>
-                <li class="list">
-                    <a href="">Contact Us</a>
-                </li>
-                <li class="list">
-                    <a href="">Bank Details</a>
-                </li>
-                <li class="list">
-                    <a href="">Overseas Donors</a>
-                </li>
-                <li class="list donate">
-                    <a href="">DONATE NOW</a>
-                </li>
-            </ul>
+        <!-- -----------------One Blanket Picture--------------- -->
+
+        <div class="one-blanket">
+            <img src="./images/One-Blanket.jpg" alt="One Blanket">
         </div>
-    </div>
 
-    <div id="container">
-        <div class="contentleft">
+        <!-- -----------------What We Are Doing--------------- -->
+
+        <div class="doing-what-head">
             <h2>
-                Donate us to support <br>
-                <span class="pakistan">
-                    flood-affected 
-                </span>
-                families in <br>
-                Pakistan
+                What We Are Doing
             </h2>
-            <h3>
-                We are distributing
-            </h3>
-            <p>
-                Saylani Welfare is on the ground and already working with local communities to assess how best to support affected families, who urgently need food, Ration, shelter, bedding, Medical Facility and hygiene items.
-            </p>
-            <button class="button">read more</button>
         </div>
-        <div class="contentright">
-            <img src="./images/Sylani contribution pic.png" alt="">
+        <div class="doing-what-icon">
+            <div class="doing-middle-icon">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <img src="./images/Welfare.png" alt="Welfare">
+                            </li>
+                            <li class="upper">
+                                Welfare
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="doing-middle-icon">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <img src="./images/Medical.png" alt="Medical">
+                            </li>
+                            <li class="upper">
+                                Medical
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="doing-middle-icon">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <img src="./images/Online-sadqah.png" alt="Online-Sadqah">
+                            </li>
+                            <li class="upper">
+                                Online-Sadqah
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="doing-middle-icon">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <img src="./images/RO-Plant.png" alt="RO-Plant">
+                            </li>
+                            <li class="upper">
+                                RO-Plant
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="doing-middle-icon">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <img src="./images/Education.png" alt="Education">
+                            </li>
+                            <li class="education-icon">
+                                Education
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="food-icon">
+                <ul>
+                    <li>
+                        <ul>
+                            <li>
+                                <img src="./images/Food.png" alt="Food">
+                            </li>
+                            <li class="food-icon-top">
+                                Food
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
+
+        <!-- -----------------Upcoming Projects--------------- -->
+
+        <div id="upcoming-projects">
+            <div class="food-distribution">
+                <a href="">
+                    <div class="food-heading-button">
+                        <div class="form_heading_button">
+                            <h4>
+                                Food Distributionfoe flood affectees in <br>
+                                interior Sindh & Balochistan
+                            </h4>
+                            <span class="form_button">Donate</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="IT-heading-button">
+                        <div class="form_heading_button">
+                            <h4>
+                                IT Enterpreneurship Courses
+                            </h4>
+                            <span class="form_button">Donate</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="help-heading-button">
+                        <div class="form_heading_button">
+                            <h4>
+                                Help the needy in winter
+                            </h4>
+                            <span class="form_button">Donate</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- -----------------Other Projects--------------- -->
+
+        <div id="other_projects_container">
+            <div class="under_img_top_right">
+                <h2>
+                    Saylani serve <br>
+                    almost 300,000 <br>
+                    underprivileged <br>
+                    on daily basis
+                </h2>
+            </div>
+            <div class="distrbution_food">
+                <img src="./images/distribution-food.jpg" alt="Distribution Foods" style="border-top-left-radius: 50px;">
+            </div>
+            <div class="other_projects">
+                <div class="other_projects_head">
+                    <h1>
+                        Other Projects
+                    </h1>
+                </div>
+                <div class="other_projects_list">
+                    <div class="projects_icon">
+                        <img src="./images/Hepatitis.png" alt="Hepatitis">
+                    </div>
+                    <div class="other_projects_list_head">
+                        <h3>
+                            Hepatitis
+                        </h3>
+                        <p>
+                            Saylani Welfare has also set up a clinic for the best treatment of hepatitis patients where hepatitis patients are being treated.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="other_projects_list">
+                    <div class="projects_icon">
+                        <img src="./images/Housing Society.png" alt="Housing Society">
+                    </div>
+                    <div class="other_projects_list_head">
+                        <h3>
+                            Housing Society
+                        </h3>
+                        <p>
+                            Saylani Welfare is also providing its own home facility for the homeless people. So far, thousands of houses and flats have been constructed and given in easy installments.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="other_projects_list">
+                    <div class="projects_icon">
+                        <img src="./images/IT Literacy.png" alt="IT Literacy">
+                    </div>
+                    <div class="other_projects_list_head">
+                        <h3>
+                            IT Literacy
+                        </h3>
+                        <p>
+                            We are committed to developing more than 1 million software developers, which will add about 100 billion annually to Pakistan's economy and help ease the debt burden on Pakistan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="other_projects_list">
+                    <div class="projects_icon_tharparkar">
+                        <img src="./images/Tharparkar.png" alt="Tharparkar">
+                    </div>
+                    <div class="other_projects_list_head">
+                        <h3>
+                            Tharparkar
+                        </h3>
+                        <p>
+                            In Tharparkar, Saylani has set up several schools and ro plants, dug wells and brought the children there to Karachi and taught them modern technology.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- -----------------Calculation Image--------------- -->
+
+        <div id="main_caulculation">
+
+            <div class="calculation_line">
+
+                <div class="calculation_row">
+                    
+                    <div class="cal_row_food">
+                        <img src="./images/food2.png" alt="Food">
+                        <ul class="bold_figure">
+                            <li class="bold_num">200000</li>
+                            <li>Food</li>
+                            <li>(Daily)</li>
+                        </ul>
+                    </div>
+
+                    <div class="cal_row_food">
+                        <img src="./images/Family adoption.png" alt="Family Adoption">
+                        <ul class="bold_figure">
+                            <li class="bold_num">12000</li>
+                            <li>Family Adoption</li>
+                            <li>(Monthly)</li>
+                        </ul>
+                    </div>
+
+                    <div class="cal_row_food">
+                        <img src="./images/Education2.png" alt="Education">
+                        <ul class="bold_figure">
+                            <li class="bold_num">25000</li>
+                            <li>Education</li>
+                            <li>(Monthly)</li>
+                        </ul>
+                    </div>
+
+                    <div class="cal_row_food">
+                        <img src="./images/Medical2.png" alt="Medical">
+                        <ul class="bold_figure">
+                            <li class="bold_num">125000</li>
+                            <li>Medical</li>
+                            <li>(Monthly)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
     </div>
 </body>
 </html>
