@@ -57,7 +57,7 @@ a {
 
 .bottom-border {
     border-bottom: 1px solid rgb(238, 221, 221);
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 2;
 }
@@ -275,7 +275,6 @@ a {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    font-size: 25px;
 }
 
 .doing-what-icon {
@@ -284,48 +283,54 @@ a {
     margin-bottom: 35px;
 }
 
-.doing-what-icon li {
-    list-style-type: none;
+.doing-row-icon {
+    display: flex;
+    justify-content: center;
 }
 
-.doing-middle-icon {
+.doing-mid-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #f0fcdb;
+    border-radius: 10px;
     padding: 20px 40px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
+    height: 100%;
+    transition: all 0.4s;
 }
 
-.doing-middle-icon:hover {
-    background-color: #f8f5e5;
-    font-size: 20px;
-
+.doing_mid_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-.education-icon {
-    margin-top: 20px;
-}
-
-.food-icon {
-    background-color: #f0fcdb;
-    padding: 20px 40px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.food-icon-top {
-    margin-top: 20px;
-}
-
-.upper {
+.doing_mid_head {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
     margin-top: 10px;
 }
 
+.doing-mid-icon:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #f6ffe7;
+}
+
+
+
 /* ------------------------Upcoming Projects---------------------------- */
 
+/* .upcoming-projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+} */
 
 .food-distribution {
     display: flex;
@@ -334,85 +339,172 @@ a {
 
 .food-heading-button {
     background-image: url(./images/Food-Distribution.jpg);
+    opacity: 1;
+    background-position: center;
     background-size: cover;
     border-radius: 12px;
     width: 360px;
     height: 280px;
-    padding: 0px 10px;
+    transition: all 300ms ease-in;
 }
 
 .IT-heading-button {
     background-image: url(./images/IT-Enterprenuarship.jpg);
+    opacity: 1;
+    background-position: center;
     background-size: cover;
     border-radius: 12px;
     width: 360px;
     height: 280px;
-    padding: 0px 10px ;
+    transition: all 300ms ease-in;
 }
 
 .help-heading-button {
     background-image: url(./images/Help-The-Needy.jpg);
+    opacity: 1;
+    background-position: center;
     background-size: cover;
     border-radius: 12px;
     width: 360px;
     height: 280px;
-    padding: 0px 10px ;
+    transition: all 300ms ease-in;
 }
 
 .form_heading_button {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 100%;
+    width: 360px;
+    height: 280px;
     color: white;
+    padding: 10px;
+}
+
+.form_heading_button h4{
+    font-size: 18px;
+    letter-spacing: 0.3px;
 }
 
 .form_button {
     background-color: #8dc63f;
     text-align: center;
     border-radius: 5px;
+    border: none;
     padding: 10px 0px;
     margin: 10px 0px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.food-heading-button:hover {
+    transform: scale(1.07, 1.07);
+    opacity: 0.8;
+}
+
+.IT-heading-button:hover {
+    transform: scale(1.07, 1.07);
+    opacity: 0.8;
+}
+
+.help-heading-button:hover {
+    transform: scale(1.07, 1.07);
+    opacity: 0.8;
 }
 
 /* ------------------------Upcoming Other Projects---------------------------- */
 
 #other_projects_container {
     margin-top: 70px;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+}
+
+.distribution_img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.distribution_img_top {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
-.under_img_top_right {
+.distribution_img_top img{
+    border-top-left-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.distribution_food_TL {
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: #8dc63f;
     border-top-left-radius: 50px;
-    padding: 45px;
-    font-size: 20px;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 50%;
+    height: 50%;
+}
+
+.distribution_food_TL h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 27px;
     color: rgb(255, 255, 255);
 }
 
-.distrbution_food img {
-    width: 560px;
-    height: 460px;
+.distribution_food_TR {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid white;
+    width: 50%;
+    height: 50%;
+}
+
+.distribution_food_BL {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-right: 1px solid white;
+    width: 50%;
+    height: 50%;
+}
+
+.distribution_food_BR {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
 }
 
 .other_projects {
     margin-left: 25px;
+    width: 50%;
 }
 
 .other_projects_head {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .other_projects_list {
     display: flex;
+    padding-left: 10px;
 }
 
 .other_projects_list_head {
     padding: 0px 0px 20px 20px;
-    line-height: 1.6rem;
+    line-height: 1.4rem;
 }
 
 .projects_icon img{
@@ -429,24 +521,25 @@ a {
     color: #0066b3;
 }
 
-/* ------------------------Upcoming Other Projects---------------------------- */
+/* ------------------------Calculation Images---------------------------- */
 
 #main_caulculation {
     background-color: #0066b3;
     margin-bottom: 50px;
 }
 
-.calculation_line {
+.cal_bg_img_line {
     background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
-    background-size: contain;
-    background-position: top;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 420px;
+    height: 440px;
 }
 
 .calculation_row {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .cal_row_food ul {
@@ -458,19 +551,29 @@ a {
 
 .cal_row_food {
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    flex-wrap: wrap;
-    margin: 70px 55px;
+    align-items: center;
+    margin: 0px 50px;
 }
 
-.bold_figure .bold_num {
-    font-size: 42px;
-    margin-top: 30px;
+.bold_num {
+    font-size: 18px;
+    margin-top: 22px;
 }
 
-.cal_row_food img {
+.bold_figure li:first-child {
     background-color: white;
-    padding: 30px;
-    border-radius: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bold_figure li>img {
+    height: 50px;
+}
+
+.bold_figure li>p {
+    letter-spacing: 0.2px;
 }
