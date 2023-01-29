@@ -100,17 +100,22 @@ a {
     height: 60px;
 }
 
-.saylanilogo-navbar ul {
+.homenavbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    font-weight: 600;
 }
 
 .homenavbar li {
     position: relative;
     text-align: center;
     padding-bottom: 3px;
+}
+
+.list:focus {
+    color: #0066b3;
 }
 
 .list:hover::after {
@@ -123,21 +128,20 @@ a {
     bottom: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    animation-name: underline;
-    animation-duration: 0.25s;
-    animation-direction: normal;
-    animation-timing-function: ease-in;
+    animation: underline 0.30s linear;
 }
 
 @keyframes underline {
-    from {
+    0% {
         width: 0%;
     }
+    
 
-    to {
+    100% {
         width: 100%;
     }
 }
+
 
 .donate a {
     background-color: #0066b3;
@@ -157,7 +161,18 @@ a {
 
 .donor a {
     color: #8dc63f;
+    animation: color-change 1s infinite;
 }
+
+@keyframes color-change {
+    50% {
+        color: #0066b3;
+    }    
+    100% {
+        color: #8dc63f;
+    }
+}
+
 
 
 /* ----------------------------------Donation Headings with Pics--------------------------------- */
@@ -190,10 +205,57 @@ a {
     padding-bottom: 10px;
 }
 
-.contentleft h3 {
+.wrapper {
+    display: flex;
+}
+
+.wrapper .static-text {
     font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    align-self: center;
+}
+
+.wrapper .dynamic-text {
+    margin-left: 10px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-text li {
+    list-style-type: none;
+    color: #0066b3;
+    font-size: 28px;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top:-360px;
+    }
+}
+
+.dynamic-text li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 28px;
+    height: 40%;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0066b3;
+    animation: typing 3s steps(13) infinite;
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 5px);
+    }
+    100% {
+        left: 0;
+    }
 }
 
 .contentleft p {
@@ -209,6 +271,11 @@ a {
     text-align: center;
     border-radius: 5px;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.read-more:active {
+    transform: translate(20px) scale(0.9, 0.9);
 }
 
 .green-text {
@@ -218,11 +285,6 @@ a {
 .contentright img {
     width: 520px;
     margin-top: 35px;
-}
-
-.ration-bags {
-    margin-left: 5px;
-    color: #0066b3;
 }
 
 /* -----------------------------------Quick Donations------------------------------------------ */
@@ -267,17 +329,17 @@ a {
     background-color: white;
     border-radius: 8px;
     font-weight: bold;
-    transition: transform 1s ;
+    transition: background-color 1s;
 } 
 
 .support-me-list li:hover {
     background-color: #424242;
     color: white;
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
     cursor: pointer;
 }
 
-.support_me_ul li:nth-child(5) {
+.support_me_ul li:last-child {
     background-color: #8dc63f;
     color: white;
     border-radius: 4px;
